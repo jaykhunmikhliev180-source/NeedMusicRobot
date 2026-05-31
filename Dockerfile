@@ -5,11 +5,8 @@ FROM python:3.9-slim-buster
 # Changing the working directory
 WORKDIR /app
 
-# Adding possible missing dependencies for ARM servers
-RUN apk update && apk add python3-dev \
-                        gcc \
-                        libc-dev \
-                        git
+#  RUN apt-get update && apt-get install -y gcc python3-dev git
+
 # Copy the requirements.txt file into working directory and install the packages
 COPY requirements.txt .
 
