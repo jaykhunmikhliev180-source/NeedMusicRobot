@@ -1,5 +1,6 @@
 # Pulling python docker image directly
-FROM python:alpine
+FROM python:3.9-slim-buster
+
 
 # Changing the working directory
 WORKDIR /app
